@@ -1,8 +1,19 @@
-const beep = ("beep");
-const boop = ("boop")
-const neighbor = ("will you be my neighbor?");
+const robotLanguage = ['Beep', 'Boop', 'Will you be my neighbor?']
 
-function beepBoop(); {
-  for (let i = 0; i > 1; i++);
 
-}
+var inputAction = function(input) {
+  let number = [];
+ for (let i = 0; i <= input; i++); {
+   number.push(i.toString());
+};
+
+if (number.includes("3")) {
+  return number = robotLanguage[2];
+}else if (number.includes("2")) {
+  return number = robotLanguage[1];
+}else if (number.includes("1")) {
+  return number = robotLanguage[0]
+} else {
+  return number;
+};
+};

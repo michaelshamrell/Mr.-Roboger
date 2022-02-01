@@ -1,13 +1,11 @@
-Describe: roboger loop
+Describe: Constants
+test : It should create a constant string for boop = "boop", beep = "beep" and neighbor = "will you be my neighbor?"
+Code: 
+const beep = ("beep");
+const boop = ("boop")
+const neighbor = ("will you be my neighbor?");
 
-test:  a function that takes the user input and puts it into an array loop, defining the loop with "numbers", turning the input into a number variable
-code: 
-var robo = function(input) {
-  let numbers = [];
-}
-expected output: when the user inputs a number the fuction(input) should run the numbers loop.
+Output : The text inside the " "
 
-test : a for loop that calls on the input, starting at 0, then define the loop to run on any number greater than 0, then increase the value for each time the loop is executed.
-code: 
-for (let i = 0; i i <=input; i++)
-expected output: the input has to be greater than 0, 
+Describe: beepBoop()
+Test: "It should return an array with a 0 if the number 0 is inputted"

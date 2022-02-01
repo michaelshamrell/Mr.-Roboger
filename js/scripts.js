@@ -1,16 +1,8 @@
-const neighbor = "Won't you be my neighbor?"
-const boop = "boop!"
-const beep = "beep!"
+const beep = ("beep");
+const boop = ("boop")
+const neighbor = ("will you be my neighbor?");
 
-var robo = function(input) {
-  let numbers = [];
-  for (let i = 0; i <=input; i++);
-};
+function beepBoop(); {
+  for (let i = 0; i > 1; i++);
 
-var robos = numbers(function(number)) {
-  if (number.includes("3")) {
-    return number = neighbor;
-  }else if (number.includes("2")) {
-    return number = boop;
-  }
 }

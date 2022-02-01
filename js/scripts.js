@@ -13,20 +13,22 @@ const inputActions = numbers(function(number) {
   }else if (number.includes("2")) {
     return number = robotLanguage[1];
   }else if (number.includes("1")) {
-    return number = robotLanguage[0]
+    return number = robotLanguage[0];
   } else {
     return number;
-  };
-  });
-  return inputActions;
+      };
+    });
+    return inputActions;
   };
 
-$(document).ready(funtion() {
+$(document).ready(function() {
   $("form#number").submit(function(event) {
     const inputAction = parseInt($("input#input").val());
-    $("inputAction").text(result);
-    $("resut").show();
+    const result = inputActions(input);
+    $("#results").text(result);
+    $(".output").show();
     event.preventDefault();
   })
-})
+});
+
 

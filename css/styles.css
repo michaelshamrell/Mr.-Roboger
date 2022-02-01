@@ -9,7 +9,14 @@
 }
 h1 {
   text-align: center;
+  font-weight: bolder;
 }
 .container {
   text-align: center;
+  font-weight: bolder;
+}
+body {
+background-image: url("https://thumbs.dreamstime.com/b/cute-robot-holding-blank-white-poster-text-blue-backgroun-vector-illustration-background-130435875.jpg");
+background-repeat: no-repeat, repeat;
+background-size: cover;
 }

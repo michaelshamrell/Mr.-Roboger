@@ -1,13 +1,21 @@
+$(document).ready(function() {
+  $("form#number").submit(function(event) {
+    const numberInput = parseInt($("number#input").val());
+    const result = numberInput(input);
+    $("#result").text(number);
+    $("#result").show();
+    event.preventDefault();
+  });
+});
 const robotLanguage = ['Beep', 'Boop', 'Will you be my neighbor?']
 
-
-var inputAction = function(input) {
-  let numbers = [];
+const numberInput = function(input) {
+  let number = [];
  for (let i = 0; i <= input; i++); {
-   numbers.push(i.toString());
+   number.push(i.toString());
 };
 
-const inputActions = numbers(function(number) {
+const numberInput = number.map(function(number) {
   if (number.includes("3")) {
     return number = robotLanguage[2];
   }else if (number.includes("2")) {
@@ -18,17 +26,9 @@ const inputActions = numbers(function(number) {
     return number;
       };
     });
-    return inputActions;
+    return numberInput;
   };
 
-$(document).ready(function() {
-  $("form#number").submit(function(event) {
-    const inputAction = parseInt($("input#input").val());
-    const result = inputActions(input);
-    $("#results").text(result);
-    $(".output").show();
-    event.preventDefault();
-  })
-});
+
 
 

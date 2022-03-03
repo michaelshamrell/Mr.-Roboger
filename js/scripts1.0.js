@@ -5,15 +5,27 @@ function numberInput (inputArray) {
   for (let i = 0; i <= inputArray; i += 1) {
     var roboReturn = i.toString();
 
-    if (robotLanguage.includes(3))
-      return numbers = robotLanguage[]
-
-
-
-
+    if (roboReturn.includes(3)) {
+      numbers.push(robotLanguage[2]);
+    } else if (roboReturn.includes(2)) {
+      numbers.push(robotLanguage[1])
+    } else if (roboReturn.includes(1)) {
+      numbers.push(robotLanguage[0])
+    } else {
+      numbers.push(roboReturn);
+    }
   }
+  return numbers;
 }
 
-
-
+$(document).ready(function() {
+  $("form#roboger").submit(function(event) {
+  event.preventDefault();
+  var inputArray = ($("input#input").val()); 
+  var result = numberInput(inputArray);
+    $("#result").text(result);
+   
+  });
+  
+});
 

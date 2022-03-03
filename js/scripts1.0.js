@@ -1,5 +1,12 @@
+$(document).ready(function() {
+  $("form#roboger").submit(function(event) {
+  event.preventDefault();
+  var inputArray = ($("input#input").val()); 
+  var result = roboger(inputArray);
+    $("#result").text(result);
+  });
+});
 const robotLanguage = ['Beep' , 'Boop' , 'Will you be my neighbor? ']
-
 function roboger (inputArray) {
   var numbers = []
   for (let i = 0; i <= inputArray; i += 1) {
@@ -16,14 +23,5 @@ function roboger (inputArray) {
   };
     return numbers;
 }
-$(document).ready(function() {
-  $("form#roboger").submit(function(event) {
-  event.preventDefault();
-  var inputArray = ($("input#input").val()); 
-  var result = roboger(inputArray);
-    $("#result").text(result);
-   
-  });
-  
-});
+
 

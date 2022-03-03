@@ -1,24 +1,17 @@
-Describe: Constant
-test : It should create a constant string for boop = "boop", beep = "beep" and neighbor = "will you be my neighbor?"
-Code: 
-const robotLanguage = ['Beep', 'Boop', 'Will you be my neighbor?']
+Describe: roboger()
 
-Output : robotLanguage[0] returns 'Beep' etc.. etc..
+Test: "It should return an array of numbers from 0 to the user's inputted number"
+Code: roboger(5);
+Expected Output: [0, 1, 2, 3, 4, 5]
 
+Test: "It should return 'Wont you be my neighbor?' if the number[] includes 3"
+Code roboger(5)
+expected Output: [0, 1, 2, 'Wont you be my neighbor?', 4, 5]
 
+Test:"It should return 'boop' if the number[] includes 2"
+Code roboger(5)
+expected Output: [0, 1, 'boop', 'Wont you be my neighbor?', 4, 5]
 
-
-Describe: inputAction
-Test: "It should take a users input, starting at 0, and push it to a string of numbers"
-code:
-var inputAction = function(input) {
-  let number = [];
- for (let i = 0; i <= input; i++); {
-   numbers.push(i.toString());
-};
-
-Test : "It should return robotLanguage[2] when there is a 3, robotLanguage[1] when there is a 2, and robotLanguage[0] when there is a 1"
-
-
-expected Output: "It should return robotLanguage[2] when there is a 3, robotLanguage[1] when there is a 2, and robotLanguage[0] when there is a 1"
-
+Test: "It should return 'beep' if the number[] includes 1"
+Code roboger(5)
+expected Output: [0, 'beep', 'boop', 'Wont you be my neighbor?', 4, 5]
